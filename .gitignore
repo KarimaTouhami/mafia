@@ -1,0 +1,7 @@
+.env
+words.txt
+.venv/
+bot.log
+__pycache__/
+*.pyc
+.vscode/

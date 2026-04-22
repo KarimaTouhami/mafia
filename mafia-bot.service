@@ -1,0 +1,17 @@
+[Unit]
+Description=Mafia Discord Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=karima
+WorkingDirectory=/home/karima/mafia
+ExecStart=/usr/bin/python3 /home/karima/mafia/bot.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/karima/mafia/bot.log
+StandardError=append:/home/karima/mafia/bot.log
+
+[Install]
+WantedBy=multi-user.target
